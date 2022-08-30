@@ -179,7 +179,7 @@
 #else
 /*
 **
-** Unable to detect the operaating syystem
+** Unable to detect the operating system
 **
 */
 #endif
@@ -215,6 +215,11 @@
 #ifndef   MKDIR_ONE_ARG
 #define   MKDIR_ONE_ARG      FALSE
 #endif /* MKDIR_ONE_ARG */
+
+
+#ifndef   DEF_PROMPT
+#define   DEF_PROMPT         "> "
+#endif /* DEF_PROMPT */
 
 #ifndef   PERMISSIONS
 #define   PERMISSIONS        0x0644
@@ -378,7 +383,7 @@
 **
 */
 #ifndef   DEF_PROMPT
-#define   DEF_PROMPT         "bwBASIC:\n"
+define   DEF_PROMPT         "bwBASIC> "
 #endif /* DEF_PROMPT */
 #endif /* FALSE */
 

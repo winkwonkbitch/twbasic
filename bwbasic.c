@@ -65,27 +65,24 @@ static void process_basic_line (char *buffer);
 GlobalType *My = NULL;
 
 static char *Banner[] = {
-  "########  ##    ## ##      ##    ###    ######## ######## ########            ",
-  "##     ##  ##  ##  ##  ##  ##   ## ##      ##    ##       ##     ##           ",
-  "##     ##   ####   ##  ##  ##  ##   ##     ##    ##       ##     ##           ",
-  "########     ##    ##  ##  ## ##     ##    ##    ######   ########            ",
-  "##     ##    ##    ##  ##  ## #########    ##    ##       ##   ##             ",
-  "##     ##    ##    ##  ##  ## ##     ##    ##    ##       ##    ##            ",
-  "########     ##     ###  ###  ##     ##    ##    ######## ##     ##           ",
+  "\e[1;1H\e[2J",
+  " ######## ##      ## ########     ###     ######  ####  ######                ",
+  "    ##    ##  ##  ## ##     ##   ## ##   ##    ##  ##  ##    ##               ",
+  "    ##    ##  ##  ## ##     ##  ##   ##  ##        ##  ##                     ",
+  "    ##    ##  ##  ## ########  ##     ##  ######   ##  ##                     ",
+  "    ##    ##  ##  ## ##     ## #########       ##  ##  ##                     ",
+  "    ##    ##  ##  ## ##     ## ##     ## ##    ##  ##  ##    ##               ",
+  "    ##     ###  ###  ########  ##     ##  ######  ####  ######                ",
+  "                                                           v0.1               ",
   "                                                                              ",
+  " Based on:                                                                    ",
   "                                                                              ",
-  "                                    ########     ###     ######  ####  ###### ",
-  "                                    ##     ##   ## ##   ##    ##  ##  ##    ##",
-  "                                    ##     ##  ##   ##  ##        ##  ##      ",
-  "                                    ########  ##     ##  ######   ##  ##      ",
-  "                                    ##     ## #########       ##  ##  ##      ",
-  "                                    ##     ## ##     ## ##    ##  ##  ##    ##",
-  "                                    ########  ##     ##  ######  ####  ###### ",
+  " Bywater BASIC Interpreter, version 3.20                                      ",
+  " Copyright (c) 1993, Ted A. Campbell                                          ",
+  " Copyright (c) 1995-1997, Jon B. Volkoff                                      ",
+  " Copyright (c) 2014-2017, Howard Wulf, AF5NE                                  ",
   "                                                                              ",
-  "Bywater BASIC Interpreter, version 3.20                                       ",
-  "Copyright (c) 1993, Ted A. Campbell                                           ",
-  "Copyright (c) 1995-1997, Jon B. Volkoff                                       ",
-  "Copyright (c) 2014-2017, Howard Wulf, AF5NE                                   ",
+  " Modifications by: 01001100                                                   ",
   "                                                                              ",
   NULL
 };
@@ -509,7 +506,7 @@ bwb_init (void)
   My->IsInteractive = TRUE;
   My->OptionSleepDouble = 1;
   My->OptionIndentInteger = 2;
-  My->OptionTerminalType = C_OPTION_TERMINAL_NONE;
+  My->OptionTerminalType = C_OPTION_TERMINAL_ANSI;
   My->OptionRoundType = C_OPTION_ROUND_BANK;
   My->NextValidLineNumber = MINLIN;
   My->IncludeLevel = 0;                /* %INCLUDE */
