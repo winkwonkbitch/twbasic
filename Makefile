@@ -16,7 +16,7 @@ dotc=bwb_cmd.c bwb_dio.c bwb_fnc.c bwb_int.c bwb_stc.c bwb_tbl.c bwbasic.c bwd_f
 .PHONY: all clean install list
 
 all: $(deps)
-	$(CC) -o $(name) $(CFlags) $(dotc)
+	$(CC) -o $(name) $(dotc) $(CFlags)
 
 clean:
 	rm -f $(name)
