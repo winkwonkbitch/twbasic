@@ -1,26 +1,26 @@
 /***************************************************************
-  
+
         bwbasic.c       Main Program File
                         for Bywater BASIC Interpreter
-  
+
                         Copyright (c) 1993, Ted A. Campbell
                         Bywater Software
-  
+
                         email: tcamp@delphi.com
-  
+
         Copyright and Permissions Information:
-  
+
         All U.S. and international rights are claimed by the author,
         Ted A. Campbell.
-  
+
    This software is released under the terms of the GNU General
    Public License (GPL), which is distributed with this software
    in the file "COPYING".  The GPL specifies the terms under
    which users may copy and use the software in this distribution.
-  
+
    A separate license is available for commercial distribution,
    for information on which you should contact the author.
-  
+
 ***************************************************************/
 
 /*---------------------------------------------------------------*/
@@ -38,7 +38,13 @@
 /*                                                               */
 /*---------------------------------------------------------------*/
 
-
+/*--------------------------------------------------------\
+|                                                         |
+|   Additional changes and additions make by 01001100     |
+|           (unmarked due to lack of effort)              |
+|                                                         |
+\---------------------------------------------------------/
+*/
 
 #include "bwbasic.h"
 
@@ -75,14 +81,14 @@ static char *Banner[] = {
   "    ##     ###  ###  ########  ##     ##  ######  ####  ######                ",
   "                                                           v0.1               ",
   "                                                                              ",
-  " Based on:                                                                    ",
+  "Based on:                                                                     ",
   "                                                                              ",
-  " Bywater BASIC Interpreter, version 3.20                                      ",
-  " Copyright (c) 1993, Ted A. Campbell                                          ",
-  " Copyright (c) 1995-1997, Jon B. Volkoff                                      ",
-  " Copyright (c) 2014-2017, Howard Wulf, AF5NE                                  ",
+  "Bywater BASIC Interpreter, version 3.20                                       ",
+  "Copyright (c) 1993, Ted A. Campbell                                           ",
+  "Copyright (c) 1995-1997, Jon B. Volkoff                                       ",
+  "Copyright (c) 2014-2017, Howard Wulf, AF5NE                                   ",
   "                                                                              ",
-  " Modifications by: 01001100                                                   ",
+  "Modifications by: 01001100                                                    ",
   "                                                                              ",
   NULL
 };
