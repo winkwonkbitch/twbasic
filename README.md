@@ -1,6 +1,6 @@
 # Fork notes
 
-Forked from https://github.com/nerun/bwbasic and modified to work better on my typewriter
+Forked from https://github.com/nerun/bwbasic and modified to work better for my uses
 
 # Bywater BASIC Interpreter
 
