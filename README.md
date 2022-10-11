@@ -1,6 +1,6 @@
 # Fork notes
 
-Forked from https://github.com/nerun/bwbasic and modified to work better for my uses
+Forked from https://github.com/nerun/bwbasic and modified to clean up legacy encodings, strip unnecessary files, and add a simplified makefile 
 
 # Bywater BASIC Interpreter
 
